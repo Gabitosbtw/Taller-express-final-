@@ -1,0 +1,38 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static %}
+        <div class="container">
+            <center>
+                <p class="color texto">
+                    ¡Las reseñas de nuestros clientes!
+                </p>
+            </center>
+            <br>
+            <br>
+
+            <center>
+                <div class="col">
+                    <div class="" style="width: 18rem;" id="color">
+                        <img src="{% static 'img/1.png' %}" width="400" height="300">
+
+                    </div>
+                </div><br>
+                <div class="col">
+                    <div class="" style="width: 18rem;" id="color">
+                        <img src="{% static 'img/2.png' %}" width="400" height="300">
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="col">
+                    <div class="" style="width: 18rem;" id="color">
+                        <img src="{% static 'img/3.png' %}" width="400" height="300">
+                    </div>
+                </div>
+            </center>
+        </div>
+    </main>
+{% endblock %}

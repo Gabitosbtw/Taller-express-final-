@@ -1,0 +1,37 @@
+{% extends 'core/layout.html' %}
+{% block content %}
+      <main>
+        {% load static %}
+        <div class="container">  
+          <div class="col-5">
+            <center>
+            <h2 class="texto">Formulario de reserva</h2>
+          </center>
+              <label class="texto">Nombre</label></br>
+             <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese nombre completo" maxlength="20"></br>
+          
+             <label  class="texto">Rut</label></br>
+             <input type="text" name="rut" id="rut" class="form-control" placeholder="Ingrese rut con guion" maxlength="10"></br>
+
+             <label  class="texto">Email</label></br>
+             <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese Email sin arroba" maxlength="70"></br>
+      
+             <label class="texto">Teléfono</label></br>
+             <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Ingrese teléfono celular" maxlength="9"></br>
+            
+             <label class="texto">Fecha y hora de llegada</label><br>
+             <input type="datetime-local" name="fecha-hora-llegada" class="form-control"></br>
+             <label class="texto">Motivo de la reserva</label><br>
+             <textarea rows="5"class="form-control" placeholder="Ingrese la razon de la reserva"maxlength="200"></textarea><br>
+             <form method="post" action="{% url 'reserva_msj' %}">
+              {% csrf_token %}
+              <input type="submit" value="Enviar" class="btn btn-primary">
+          </form>
+          
+          {% if mensaje %}
+          <p class="texto">{{ mensaje }}</p>
+          {% endif %}
+          </div>  
+        </div>
+      </main>
+ {% endblock %}

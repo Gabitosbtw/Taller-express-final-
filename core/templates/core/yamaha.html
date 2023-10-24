@@ -1,0 +1,46 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static %}
+        <center>
+            <h1 class="color texto">Moto Yamaha</h1>
+        </center><br>
+        <div class="container">
+            <div class=" col-mb-12" style="max-width: 1100px; height: 900px;" class="body">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'motos/yamaha.jfif' %}" width=" 650px" height="400px">
+                        <h3 class="color texto">¡Gracias por la preferencia!</h3>
+                        <img src="{% static 'motos/yamaha arreglada.jpg' %}"  width="650px" height="400px"/>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class=" float-end">
+                            <h2 class="textocon">Evaluacion</h2><hr class="color">
+                            <p class="textocon">Diagnostico: La moto necesita mantencion,nuevo asiento,
+                                                 espejos y pintura.
+                            </p>
+                            <p class="textocon">Fecha Entrega: 06/04/2022</p>
+                            <p class="textocon">Fecha Retiro: 03/05/20232</p>
+                            <h1 class="textocon">Materiales</h1>
+                            <ol class="textocon">
+                                <li>Pintura</li>
+                                <li>Espejos</li>
+                                <li>Cuero</li>
+                                <li>Aceite</li>
+                                <li>Luces</li>
+                                <li>Cadena</li>
+                                <li>Ruedas</li>
+                                <li>Asiento</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+{% endblock %}

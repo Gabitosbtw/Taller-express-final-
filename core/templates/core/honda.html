@@ -1,0 +1,47 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static%}
+        <center>
+            <h1 class="color texto">Moto Honda </h1>
+        </center><br>
+        <div class="container">
+            <div class=" col-mb-12" style="max-width: 1100px; height: 900px;" class="body">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'motos/honda.png' %}"  width=" 650" height="400"><br>
+                        <h3 class="color texto">¡Un antes y despúes espectacular!</h3>
+                        <img src="{% static 'motos/hondaTerminada.png' %}" width="650" height="400" />
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class=" float-end" >
+                            <h2 class="textocon">Evaluacion</h2>
+                            <hr class="color">
+                            <p class="textocon">Diagnostico:La moto no cuenta con luces delanteras,
+                                hay que colocar los espejos y el cliente pidio
+                                un diseño por lo cual hay que pintarla.
+                            </p>
+                            <p class="textocon">Fecha Entrega: 08/02/2023</p>
+                            <p class="textocon">Fecha Retiro: 13/03/2023</p>
+                            <h1 class="textocon">Materiales</h1>
+                            <ol class="textocon">
+                                <li>Pintura</li>
+                                <li>Espejos</li>
+                                <li>Luces</li>
+                                <li>Lijas</li>
+                                <li>Ruedas</li>
+                                <li>Tubo de escape</li>
+                                <li>Calcomanias</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static%}
+        <center>
+            <h1 class="color texto">Moto Guerrero </h1>
+        </center><br>
+        <div class="container">
+            <div class=" col-mb-12" style="max-width: 1100px; height: 900px;" class="body">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'motos/Guerrero.jfif' %}"  width=" 650px" height="400px">
+                        <h3 class="color texto">¡Gracias por la preferencia!</h3>
+                        <img src= "{%static 'motos/guerrero arreglada.jpg' %}"  width="650px" height="400px"/>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="float-end">
+                            <h2 class="textocon">Evaluacion</h2><hr class="color">
+                            <p class="textocon">Diagnostico:La moto necesita aceite, un cambio de motor,cambio de tubo de escape, implementar un nuevo
+                             asiento, colocar luces,arreglar la suspencion,colocar espejos y nuevas manetas.                    
+                            </p>
+                            <p class="textocon">Fecha Entrega: 01/12/2022</p>
+                            <p class="textocon">Fecha Retiro: 15/04/2023</p>
+                            <h1 class="textocon">Materiales</h1>
+                            <ol class="textocon">
+                                <li>Aceite</li>
+                                <li>Motor</li>
+                                <li>Manetas</li>
+                                <li>Manetas</li>
+                                <li>Asiento de cuero</li>
+                                <li>Luces</li>
+                                <li>Espejos</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+{% endblock %}

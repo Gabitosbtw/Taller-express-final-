@@ -1,0 +1,107 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static %}
+        <div class="container"><br>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="{% url 'reseñas' %}">
+                            <img src="{% static 'gift/mecanico-chambiando.gif' %}"  class="d-block w-100" width="1000px" height="750px">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color texto">¡Nuestros mecanicos trabajando!</h5>
+                            <p class="color texto">El trabajo duro representa a Serviexpress</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="{% url 'autos'%}">
+                            <img src="{% static 'img/inicio_autos.jpg' %}"  class="d-block w-100" width="1000px" height="750px">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color texto">Ford mustang</h5>
+                            <p class="color texto">La restauracion total de un ford mustang con rediseño personalizado
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="{% url 'motos' %}">
+                            <img src="{% static 'img/inicio_moto.jpg' %}" class="d-block w-100" width="1000px" height="750">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color texto">Honda</h5>
+                            <p class="color texto">Restauracion de una moto honda con rediseño total</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <center>
+                            <img src="{% static 'img/lavado.webp' %}"  width="301px" height="301px"><br>
+                            <div  class="textoini">
+                            <h3 class="card-title">Limpieza de Vehiculos:</h3>  
+                            <br> 
+                            <dl  class="textot">
+                            <dt>Lavado de espuma: $9.000</dt>
+                            <dt>Exterior completo: $10.000 </dt>
+                            <dt>Lavado ciclon    :   $17.000 </dt>
+                            </dl>
+                            </div>
+                        </center>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <a href="{% url 'reseñas' %}">
+                        <center>
+                            <img src="{% static 'img/reseña_card.webp' %}"  width="301" height="301"><br>
+                            <a href="{% url 'reseñas' %}" class="linkcard">Reseñas</a>
+                        </center>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <center>
+                        <img src="{% static 'img/servicio.jpg' %}"  width="301px" height="301px"><br>
+                        <div  class="textoini">
+                        <h3 class="card-title">Reparaciones:</h3>  
+                        <br> 
+                        <dl>
+                        <dt>Deshabulladora</dt>
+                        <dt>Pintura </dt>
+                        <dt>Mecanica General</dt>
+                        </dl>
+                        </div>
+                    </center>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<br>
+{% endblock %}

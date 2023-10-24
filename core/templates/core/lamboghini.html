@@ -1,0 +1,47 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+    <main>
+        {% load static %}
+        <center>
+            <h1 class="color texto">Auto: Lamborghini</h1>
+        </center><br>
+        <div class="container">
+            <div class=" col-mb-12" style="max-width: 1100px; height: 900px;" class="body">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'autos/lamborghini.jpg' %}" width=" 650px" height="400px">
+                        <br>
+                        <h3 class="color texto">¡Gracias por la preferencia!</h3>
+                        <img src="{% static 'autos/lamborghini arreglado.jpg' %}" width="650px" height="400px"/>
+                    
+                    </div>
+                    <div class="col-md-3">
+                        <div class="float-end">
+                            <h2 class="textocon">Evaluacion</h2><hr class="color">
+                            <p class="textocon">Diagnostico:El auto esta en muy buenas condiciones pero necesita revision tecnica profunda, una limpieza y un motor nuevo.                     
+                            </p>
+                            <p class="textocon">Fecha Entrega: 08/10/2022</p>
+                            <p class="textocon">Fecha Retiro:  14/01/2022</p>
+                            <h1 class="textocon">Materiales</h1>
+                            <ol class="textocon">
+                                <li>Motor</li>
+                                <li>Agua destilada</li>
+                                <li>Brochas y cepillos</li>
+                                <li>Limpiador con vapor</li>
+                                <li>Abrillantador</li>
+                                <li>Limpia metales</li>
+                                <li>Pintura</li>
+                                <li>Aleron</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+{% endblock %}

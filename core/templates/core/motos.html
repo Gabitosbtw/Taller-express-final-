@@ -1,0 +1,44 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+ <main> 
+    {% load static%}
+     <div class="container">
+        <center>
+            <p class="texto color">
+                ¡Entra en las distintas motos para ver el cambio!
+            </p>
+            <br>
+        </center>
+        <div class="row">
+            <div class="col">
+                <div class="" style="width: 25rem;"  >
+                    <img src="{% static 'motos/honda.png' %}" width="400px" height="300px">
+                    <center>
+                    <a href="{% url 'honda' %}" class="linkcard">Honda</a><br>
+                    </center> 
+                  </div>    
+            </div>
+            <div class="col">
+                <div class="" style="width: 25rem;"  >
+                    <img src="{%static 'motos/Guerrero.jfif' %}" width="400px" height="300px">
+                    <center>
+                    <a href="{% url 'guerrero' %}"  class="linkcard" >Guerrero</a><br>
+                    </center> 
+                  </div>    
+            </div>
+        </div>
+        <center>
+            <div class="col">
+                <div class="" style="width: 25rem;" >
+                    <img src="{% static 'motos/yamaha.jfif' %}" width="400px" height="300px">
+                    <a href="{% url 'yamaha'%}" class="linkcard">Yamaha</a><br>
+                    </center> 
+                  </div>    
+            </div>
+     </div>
+    </main>
+
+
+
+{% endblock%}

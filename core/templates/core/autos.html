@@ -1,0 +1,43 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+    <main>
+        {% load static %}
+     <div class="container">
+        <center>
+            <p class="texto color">
+                ¡Entra en los distintos autos para ver el cambio!
+            </p>
+            <br>
+        </center>
+        <div class="row">
+            <div class="col">
+                <div class="" style="width: 25rem;">
+                    <img src="{% static 'autos/WhatsApp Image 2023-03-29 at 11.52.28.jpeg' %}" width="500px" height="300px">
+                    <center>
+                    <a  href="{% url 'ford_mustang' %}" class="linkcard">Ford mustang</a>
+                    </center> 
+                  </div>    
+            </div><br>
+            <div class="col">
+                <div class="" style="width: 25rem;" >
+                    <img src="{% static 'autos/volkswagen.jpg'%}" width="500px" height="300px">
+                    <center>
+                    <a href="{% url 'volkswagen' %}" class="linkcard">volkswagen</a>
+                    </center> 
+                  </div>    
+            </div>
+        </div>
+        <br>
+        <center>
+            <div class="col">
+                <div class="" style="width: 35rem;" id="color">
+                    <img src="{% static 'autos/lamborghini.jpg' %}" width="500px" height="300px">         
+                    <a href= "{% url 'lamboghini' %}" class="linkcard">Lamboghini</a>
+                    </center> 
+                  </div>    
+            </div>
+     </div>
+    </main>
+{% endblock %}

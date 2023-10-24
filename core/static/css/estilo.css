@@ -1,0 +1,188 @@
+.body{
+    background-image:url('/static/img/Fondo_Negro_.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+}
+.contenedor{
+    
+    width: auto;
+    height: auto;
+
+}
+.contenedor2{
+    
+    width: 800px;
+    height: 500px;
+    margin:auto;
+    margin-top: 150px;
+}
+.contenedortexto{
+    
+    width: 400px;
+    height: 500px;
+    float: left;
+
+}
+.contenedorformulario{
+    
+    width: 390px;
+    height: 500px;
+    float:right;
+
+}
+.texto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    color: whitesmoke;     
+
+}
+.contenedorformularioinput{
+   
+    width: 390px;
+    height: 450px;
+    background-image:url('/static/logo/fondo_login1.jpg');
+    border-radius: 5px;
+
+}
+.cajadetexto{
+    height: 55px;
+    width: 300px;
+    font-size: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+.cajadetextoh{
+    height: 50px;
+    width: 3250px;
+    font-size: 13px;
+    margin-left: 35px;
+    margin-top: 22px;
+    border-radius: 7px;
+}
+.cajaboton{
+    height: 50px;
+    width: 300px;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:#D40C06;
+    font-size: 20px;
+    color:black;
+    border-radius: 5px;
+
+}
+.cajaboton:hover{
+    height: 50px;
+    width: 300px;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #FEBB02;
+    font-size: 20px;
+    color:black;
+    border-radius: 5px;
+
+}
+.cajacrear{
+    height: 40px;
+    width: 190px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #D40C06;
+    font-size: 20px;
+    color:black;
+
+
+}
+.cajacrear:hover{
+    height: 40px;
+    width: 190px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #FEBB02;
+    font-size: 20px;
+    color:black;
+     
+}
+.color{
+    color: rgb(167, 167, 167);
+}
+.buscador{
+    height: 40px;
+    width: 170px;
+    border-radius: 6px;
+    background-color: #D40C06;
+    font-size: 15px;
+    color:black;
+
+}
+.buscador:hover{
+    height: 40px;
+    width: 170px;
+    border-radius: 6px;
+    background-color: #FEBB02;
+    font-size: 15px;
+    color:black;
+}
+.linkcard{
+    font-size: 20px;
+    color: aliceblue;
+}
+.linkcard:hover{
+    font-size: 20px;
+    color:rgb(26, 106, 177);
+}
+.contcrear{
+    width: 800px;
+    height: 600px;
+    margin:auto;
+    margin-top: 130px;
+}
+.inputcrear{
+    width: 400px;
+    height: 500px;
+    background-image: url(https://cdn.pixabay.com/photo/2011/08/17/14/38/fire-8837_1280.jpg);
+    border-radius: 6px;
+}
+.cajanuevac{
+    height: 52px;
+    width: 290px;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.textocon{
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+    color: grey;
+}
+
+.textoini{
+    font-size: 20px;
+    color:aliceblue;
+}
+.btn{
+    height: 40px;
+    border-radius: 7px;
+    background-color: #f5ecec;
+    color: #0fb0b6;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 5;
+}
+.btn:hover{
+    box-shadow: 3px 3px 5px #1a27df;
+    background-color: 3px 3px 5px #1a27df;
+    color: 3px 3px 5px #1a27df;
+}
